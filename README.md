@@ -26,12 +26,25 @@ This repo is completely based on official detectron2 library. You will need to i
 Simply run the cells of the notebook ```RPN_proposals.ipynb```, for getting started.
 
 ### Example
-For top5 proposals on a given image, you can run the cell
+For plotting top5 proposals on a given image, you can run the cell
 ``` shell
 # TOP5
 plot_RPN_proposals(image_file_name, 0, batched_inputs,proposals,5)
 ```
 Sample Output:
 
+<div align="center">
+  <img src="top5.png"/>
+</div>
 
+For plotting the maxsize proposal on a given image, you can run the cell
+``` shell
+# Maxbox
+plot_RPN_proposals(image_file_name, 0, batched_inputs,proposals)
+```
+Sample Output:
+
+<div align="center">
+  <img src="max_size.png"/>
+</div>
   
